@@ -41,13 +41,6 @@ git clone https://github.com/nick2905/KuBatak.git
 ```
 atau dapat mengunduhnya di link playstore diatas
 
-## Authors
-
-* **Nicolas Manurung** - *Institut Teknologi Del Student* 
-* [LinkedIn](https://www.linkedin.com/in/nicolas-manurung-263204190/)
-* [Instagram](https://www.instagram.com/nicolasmanurung/)
-
-
 ## Acknowledgments
 
 * View Model
