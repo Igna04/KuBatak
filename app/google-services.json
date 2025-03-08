@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "394261162968",
+    "project_id": "kubatak-project",
+    "storage_bucket": "kubatak-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394261162968:android:0d586d35f035a6be1f20ad",
+        "android_client_info": {
+          "package_name": "com.toba.nick2905.kubatak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvz-fYMblsozUG_4CvnSSXmzAg2RlUd84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

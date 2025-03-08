@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailInformasi.detailKebudayaan.sejarah.DetailSejarah">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Sarita"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aksara_batak_toba"
+                    android:text="srit"
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Sejarah"
+                    android:textColor="@color/colorRed"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Berdasarkan penelitian perjalanan sejarah, Nenek moyang orang Batak berasal dari keturunan suku Mansyuria (Manchuria) yang hidup di daerah Utara Tibet sekitar 7.000 tahun lalu."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/img_sejarah_batak_toba" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Pada masa itu, nenek moyang orang Batak diusir oleh suku Barbar Tartar dari tanah leluhurnya di Utara Tibet. Pengusiran itu menyebabkan suku Mansyuria bermigrasi ke pegunungaan Tibet melalui Tiongkok (China). Dari peristiwa migrasi di pegunungan Tibet tersebut dapat ditemukan sebuah danau dengan nama Toba Tartar. Suku Mansyuria memberikan nama danau itu untuk mengenang peristiwa pengusiran mereka oleh suku Barbar Tartar.\n\n Setelah dari pegunungan Tibet, suku Mansyuria turun ke Utara Burma atau perbatasan dengan Thailand. Di sini, suku Mansyuria meninggalkan budaya Dongson. Yakni sebuah kebudayan asli suku bangsa ini yang mirip dengan budaya Batak yang ada sekarang ini."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Tak bertahan lama di wilayah itu, suku Mansyuria yang terus dikejar-kejar suku Barbar Tartar kembali bergerak menuju arah Timur ke Kamboja, dan ke Indocina. Dari Indocina, suku Mansyuria berlayar menuju Philipina, kemudian ke Sulawesi Utara, atau Toraja (ditandai dengan hiasan kerbau pada Rumah Adat Toraja). Kemudian mereka turun ke Tanah Bugis Sulawesi Selatan (ditandai dengan kesamaan logat dengan orang Batak), dan mengikuti angin Barat dengan berlayar ke arah Lampung di wilayah Ogan Komering Ulu, dan akhirnya naik ke Pusuk Buhit, Danau Toba."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Saat berlayar dari Indocina, sebagian suku Mansyuria melewati Tanah Genting Kera di Semenanjung Melayu. Dari sini, mereka berlayar menuju Pantai Timur Sumatera, dan mendarat di Kampung Teluk Aru di daerah Aceh. Dari Teluk Aru ini, suku Mansyuria yang terus bermigrasi itu naik ke Tanah Karo, dan kemudian meneruskan perjalanan hingga sampai ke Pusuk Buhit."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

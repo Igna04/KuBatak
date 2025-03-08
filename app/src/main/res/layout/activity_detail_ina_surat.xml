@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailInformasi.detailKesusastraan.InaSurat.DetailInaSurat">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Ina Ni Surat"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aksara_batak_toba"
+                    android:text="In ni Srt\\"
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/img_ina_ni_surat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Ina ni surat merupakan huruf-huruf pembentuk dasar huruf aksara Batak. Selama ini, ina ni surat yang dikenal terdiri dari: a, ha, ka, ba, pa, na, wa, ga, ja, da, ra, ma, ta, sa, ya, nga, la, ya, nya, ca, nda, mba, i, u. Nda dan Mba adalah konsonan rangkap yang hanya ditemukan dalam variasi Batak Karo, sedangkan Nya hanya digunakan di Mandailing akan tetapi dimasukkan juga dalam alfabet Toba walaupun tidak digunakan. Aksara Ca hanya terdapat di Karo sedangkan di Angkola-Mandailing huruf Ca ditulis dengan menggunakan huruf Sa dengan sebuah tanda diakritik yang bernama tompi di atasnya."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

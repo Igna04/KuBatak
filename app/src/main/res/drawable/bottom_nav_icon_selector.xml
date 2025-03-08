@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@drawable/rounded_icon_background" />
+            <item android:drawable="@drawable/ic_camera" android:gravity="center" />
+        </layer-list>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_camera" />
+    </item>
+</selector>

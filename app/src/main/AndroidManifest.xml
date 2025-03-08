@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toba.nick2905.kubatak">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img_logo"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.kamus.KamusActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".ui.SplashscreenActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.detailInformasi.detailKesusastraan.AnakSurat.DetailAnakSurat" />
+        <activity android:name=".ui.detailInformasi.detailKesusastraan.InaSurat.DetailInaSurat" />
+        <activity android:name=".ui.detailInformasi.detailKesusastraan.SuratBatak.DetailSuratBatak" />
+        <activity android:name=".ui.detailInformasi.detailKebudayaan.makanan.DetailMakanan" />
+        <activity android:name=".ui.detailInformasi.detailKebudayaan.kepercayaan.DetailKepercayaan" />
+        <activity android:name=".ui.detailInformasi.detailKebudayaan.ulos.DetailUlos" />
+        <activity android:name=".ui.detailInformasi.detailKebudayaan.bendera.DetailBendera" />
+        <activity android:name=".ui.detailInformasi.detailKebudayaan.sejarah.DetailSejarah" />
+        <activity android:name=".ui.detailPenomoran.bulan.DetailBulan" />
+        <activity android:name=".ui.detailPenomoran.hari.DetailHari" />
+        <activity android:name=".ui.detailPenomoran.jam.DetailJam" />
+        <activity android:name=".ui.detailPenomoran.angka.DetailAngka" />
+        <activity
+            android:name=".ui.detailBatak.DetailBatakActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ui.detailInformasi.DetailInformasiActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <uses-permission android:name="android.permission.CAMERA"/>
+</manifest>

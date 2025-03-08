@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">KuBatak</string>
+
+    <string-array name="name_penomoran">
+        <item>Angka</item>
+        <item>Waktu</item>
+        <item>Hari</item>
+        <item>Bulan</item>
+    </string-array>
+
+    <string-array name="deskripsi_penomoran">
+        <item>Penomoran Angka</item>
+        <item>Penomoran Waktu Jam</item>
+        <item>Penomoran Hari</item>
+        <item>Penomoran Bulan</item>
+    </string-array>
+
+    <string-array name="name_mata_angin">
+        <item>Timur</item>
+        <item>Tenggara</item>
+        <item>Selatan</item>
+        <item>Barat Daya</item>
+        <item>Barat</item>
+        <item>Barat Laut</item>
+        <item>Utara</item>
+        <item>Timur Laut</item>
+    </string-array>
+
+    <string-array name="name_mata_angin_batak">
+        <item>Purba</item>
+        <item>Anggoni</item>
+        <item>Dangsina</item>
+        <item>Nariti</item>
+        <item>Pastima</item>
+        <item>Manabia</item>
+        <item>Utara</item>
+        <item>Irisanna</item>
+    </string-array>
+
+    <string-array name="name_mata_angin_aksara">
+        <item>Pr\\b</item>
+        <item>a^goni</item>
+        <item>d^sin</item>
+        <item>nriti</item>
+        <item>ps\\tim</item>
+        <item>mnbia</item>
+        <item>Utr</item>
+        <item>Irisn\\n</item>
+    </string-array>
+
+    <string-array name="name_informasi_kebudayaan">
+        <item>Sejarah</item>
+        <item>Bendera dan Warna</item>
+        <item>Ulos</item>
+        <item>Kepercayaan</item>
+        <item>Makanan</item>
+        <item>Minuman</item>
+    </string-array>
+
+    <string-array name="desc_informasi_kebudayaan">
+        <item>Asal Mula Suku Batak Toba</item>
+        <item>Makna Bendera dan Warnanya</item>
+        <item>Pakaian Khas Suku Batak</item>
+        <item>Kepercayaan Yang Dianut Suku Batak</item>
+        <item>Makanan Khas Batak Toba</item>
+        <item>Minuman Khas Batak Toba</item>
+    </string-array>
+
+    <string-array name="name_informasi_kesusastraan">
+        <item>Surat Batak</item>
+        <item>Ina Ni Surat</item>
+        <item>Anak Ni Surat</item>
+        <item>Turiturian</item>
+        <item>Umpasa</item>
+        <item>Umpama</item>
+        <item>Hata Poda</item>
+    </string-array>
+
+    <string-array name="desc_informasi_kesusastraan">
+        <item>Asal mula aksara Batak</item>
+        <item>Kata pokok aksara Batak Toba</item>
+        <item>Kata sambung aksara Batak Toba</item>
+        <item>Cerita Batak Toba</item>
+        <item>Pantun Batak Toba</item>
+        <item>Peribahasa Batak Toba</item>
+        <item>Kata Nasehat Batak Toba</item>
+    </string-array>
+
+    <string-array name="name_hari_batak">
+        <item>1. Artia</item>
+        <item>2. Suma</item>
+        <item>3. Anggara</item>
+        <item>4. Muda</item>
+        <item>5. Boraspati</item>
+        <item>6. Sikkora</item>
+        <item>7. Samisara</item>
+        <item>8. Artia Ni Aek</item>
+        <item>9. Suma Ni Anggara</item>
+        <item>10. Anggara Sampulu</item>
+        <item>11. Muda Ni Mangadop</item>
+        <item>12. Boraspati Langkop</item>
+        <item>13. Sikkora Lambok</item>
+        <item>14. Samisara Purnama</item>
+        <item>15. Tula</item>
+        <item>16. Suma ni Holom</item>
+        <item>17. Anggara Ni Holom</item>
+        <item>18. Muda Ni Holom</item>
+        <item>19. Boraspati Ni Holom</item>
+        <item>20. Sikkora Mora Turun</item>
+        <item>21. Samisara Mora Turun</item>
+        <item>22. Artia Ni Anggara</item>
+        <item>23. Suma Ni Mate</item>
+        <item>24. Anggara Ni Begu</item>
+        <item>25. Muda Ni Mate</item>
+        <item>26. Boraspati Na Gok</item>
+        <item>27. Sikkora Hundul</item>
+        <item>28. Samisara Bulan Mate</item>
+        <item>29. Hurung</item>
+        <item>30. Ringkar</item>
+    </string-array>
+
+    <string-array name="name_hari_aksara">
+        <item>ar\\tia</item>
+        <item>Sm</item>
+        <item>a^gr</item>
+        <item>Md</item>
+        <item>bors\\pti</item>
+        <item>sik\\kor</item>
+        <item>smisr</item>
+        <item>ar\\tia ni aek\\</item>
+        <item>Sm ni a^gra</item>
+        <item>a^gra sam\\PuLu</item>
+        <item>Md ni m^adop\\</item>
+        <item>bors\\pti l^kop\\</item>
+        <item>sik\\kor lm\\bok\\</item>
+        <item>smisr Pr\\nm</item>
+        <item>Tl</item>
+        <item>Sm ni holom\\</item>
+        <item>a^gr ni holom\\</item>
+        <item>Md ni holom\\</item>
+        <item>bors\\pti ni holom\\</item>
+        <item>sik\\kor mor TRn\\</item>
+        <item>smisr mor TRn</item>
+        <item>ar\\tia ni A^gr</item>
+        <item>Sm ni mte</item>
+        <item>a^gr ni begu</item>
+        <item>Md ni mte</item>
+        <item>bors\\pti na hok\\</item>
+        <item>sik\\kor Hn\\Dl\\</item>
+        <item>smisr Bln\\ mte</item>
+        <item>HR^</item>
+        <item>ri^kr\\</item>
+    </string-array>
+
+    <string-array name="desc_arti_hari">
+        <item>Sada ari nauli mamukka sihataon/ulaon pesta tonggo raja</item>
+        <item>Ari sidua pat manisia dohot pidong, ulaon na hombar sadari i marburu tu harangan, marsabbil, mangkatai</item>
+        <item>Ari na rimas mangulahon pangurupion, mambahen ubat, mangarabi, molo marburu ingkon dapotan</item>
+        <item>Ari si opat-opat/mangarabi hauma, manabur boni, ulaon pesta pe denggan do</item>
+        <item>Sadarion boi do pajongjong jabu, mamongkot jabu, mamungka martiga-tiga</item>
+        <item>Naeng mangalangka, tu luat naleban/mangaranto, mangalului karejo, mamungka martiga-tiga</item>
+        <item>Ari ni raja, boi do mambahen pesta bolon (gondang) naung tinontuhon ni raja adat dalihan na tolu</item>
+        <item>Sada ari nauli naeng mangulahon pesta, si las ni roha (marsianjuan) mamokkot jabu, alai marsada ni roha ma hamu mangulahon nasa ulaon</item>
+        <item>Hurang do ulina ari sadari on mangulahon nasa ulaon, boi do martaontaonan, tu ladang/aek, marburu, marsabbil, mangkail</item>
+        <item>Na rimas do ari sadari i, jadi ingkon manat manghuling, lobi hasuhuton bolon, pangoli anak/pamuli boru, paampehon holi tu batu na pir (marhata ogung)</item>
+        <item>Mariaia do nasa ulaon</item>
+        <item>Mangadopi raja, parpangkat, mandapothon raja, na boi pangunsandean raja, dalihan na tolu</item>
+        <item>Pangoli anak/pamuli boru, manuan ompu-ompu, partanda, parbalohan, mangebati natuatua, hula, boru, mamokkot jabu, dibagasan tangiang</item>
+        <item>Ulaon harajaon bolon, mangido pasu-pasu, paebathon tu ompungna</item>
+        <item>Losok do roha sadari on denggan do manuan harambir, mangarabi, marsonang-sonang</item>
+        <item>Papunguhon sisolhot dohot angka tutur, mangido tangiang tu Mulajadi Nabolon, denggan sadarion mambahen taontaonan</item>
+        <item>Ulaon parsili ni tondi, buang sial, maranggir, mangarabi, tu balian</item>
+        <item>Manabi eme, marbabo, mandok mauliate tu Mulajadi Nabolon</item>
+        <item>Pajongjong sopo-sopo di balian, pajongjong batu ojahan, pature tangga ni jabu</item>
+        <item>Mamulung nasa daon (ubat) ni sahit na adong, mamokkot jabu, laho borhat mangaranto, tu luat sileban, paampehon holi tu batu na pir</item>
+        <item>Buang sial mangido tangiang, manaon (sabbil), bubu, mangkail</item>
+        <item>Mambahen daon (ubat) mamungka mangarabi, ulaon parsili ni tondi, mangido gogo tu Mulajadi Nabolon</item>
+        <item>Mambahen taon-taonan, marburu, marjala, mangkail tu aek</item>
+        <item>Palambok ate-ate, mangido tangiang, mambahen daon (ubat), pasahat hamauliateon</item>
+        <item>Jumpang ma tingkina, mangarabi hauma, mangaranto, tu luat sileban</item>
+        <item>Pasahat sulang-sulang tu natua tua, tu hula-hula, pangoli anak/pamuli boru</item>
+        <item>Parsili ni tondi, buang sial, mangido tangiang, mambahen daon (ubat), marburu, mangkail</item>
+        <item>Bangkol manghatai, manat mangalangka, mambahen si pir ni tondi, marburu, mangkail</item>
+        <item>Humurang do uli ni ari, sadarion dohot mangalangka pe hurang do ulina</item>
+        <item>Mangujungi panghataion naung tinaringotan hian unang marsihosoman roha, paampehon holi tu batu na pir</item>
+    </string-array>
+
+    <string-array name="desc_lapatan_hari">
+        <item>Suatu hari baik untuk mengadakan musyawarah dalam segala hal</item>
+        <item>Hari ke dua kaki manusia dan burung, pekerjaan yang bagus dalam hari ini adalah berburu ke hutan, menjaring buruan, membicarakan sesuatu hal</item>
+        <item>Hari yang bagus untuk melakukan bantuan, mengobati, jika berburu pasti akan dapat</item>
+        <item>Hari ke empat/mempersiapkan sawah ladang, menyemai bibit padi, melakukan pesta adat juga bagus pada hari ini</item>
+        <item>Hari baik untuk berpesta, mendirikan rumah, memasuki rumah baru, mencari pekerjaan dan untuk memulai suatu usaha</item>
+        <item>Hari baik dalam penentuan, melangkah ke perantauan, melamar pekerjaan, menjumpai orang besar (berpangkat), memulai berdagang, pesta perkawinan, meminang kekasih</item>
+        <item>Hari kepunyaan Raja, bisa melakukan pesta besar yang sudah ditetapkan Raja Adat Dalihan Na Tolu</item>
+        <item>Hari baik untuk semua pesta, musyawarah, mandi bunga, memasuki rumah baru, maaf-maafan, dan memulai usaha baru</item>
+        <item>Hari yang kurang baik untuk melakukan segala acara/kerja/pesta, bisa jadi sakit, ke ladang/pancoran, berburu, menjerat buruan, memancing. waspadalah dalam segala hal</item>
+        <item>Hari sial, berhati-hatilah dalam berkomunikasi (harus dijaga sopan santun), sangat baik untuk membuat obat baru dan memancing</item>
+        <item>Hari untuk bersantai dan hari yang sangat menggembirakan segala pekerjaan/pesta</item>
+        <item>Hari baik untuk menyuapi orang besar (berpangkat) melamar suatu pekerjaan, melakukan dalihan na tolu</item>
+        <item>Hari baik untuk pesta perkawinan, mendirikan rumah, mengunjungi orang tua atau mertua, memasuki rumah baru di dalam doa</item>
+        <item>Hari “Raja”, sangat baik mengadakan pesta besar, pesta muda-mudi, mengantar anak ke rumah mertua</item>
+        <item>Hari sial, yang baik dilakukan menebas ladang dan menanam kelapa</item>
+        <item>Hari yang kurang baik, tetapi baik untuk memancing dan berburu</item>
+        <item>Hari buang sial, mandi bunga, membuat obat, bercocok tanam, ke kebun</item>
+        <item>Hari panen padi, sangat baik untuk memulai panen padi, memasukkan padi kedalam lumbung</item>
+        <item>Hari baik untuk menebang pohon kayu guna bahan bangunan rumah, memperbaiki tangga rumah</item>
+        <item>Hari baik untuk mengunjungi sanak famili, pindah rumah dan mengangkat tulang</item>
+        <item>Hari baik untuk memasang jerat, memancing dan berburu</item>
+        <item>Hari baik untuk membuat obat-obatan, acara roh, meminta kekuatan ke Yang Maha Esa</item>
+        <item>Hari baik untuk berburu dan memancing ke air</item>
+        <item>Hari baik untuk menenangkan hati, memanjatkan doa, minta rejeki dan mandi bunga</item>
+        <item>Hari padi, memanen ke sawah, berpergian, ke luar desa</item>
+        <item>Hari baik untuk istrahat, membawa makanan untuk orang tua, mengganti pakaian orangtua, mengunjungi mertua, pesta pernikahan</item>
+        <item>Hari penyakit, membuat obat, berburu dan memancing</item>
+        <item>Hari baik turun ke laut, membuat penyakit, berburu dan memancing</item>
+        <item>Hari kurang baik, berhati-hati dalam rencana/langkah</item>
+        <item>Hari baik untuk saling maaf-memaafkan (musyawarah) memanjatkan doa kepada Yang Maha Esa</item>
+    </string-array>
+
+    <string-array name="name_ulos_batak">
+        <item>Mangiring</item>
+        <item>Mangiring Pinarsungsang</item>
+        <item>Bintang Maratur</item>
+        <item>Godang</item>
+        <item>Ragihotang</item>
+        <item>Sitolu Tuho</item>
+        <item>Bolean</item>
+        <item>Sibolang</item>
+        <item>Ragidup</item>
+        <item>Ragidup Silinggom</item>
+        <item>Pinussaan</item>
+        <item>Surisuri Togutogu</item>
+    </string-array>
+
+    <string-array name="name_ulos_aksara">
+        <item>m^iri^</item>
+        <item>m^iri^ pinr\\S^sa^</item>
+        <item>bin\\t^ mrTr\\</item>
+        <item>god^</item>
+        <item>rgihot^</item>
+        <item>sitoL Tho</item>
+        <item>bolean\\</item>
+        <item>sibol^</item>
+        <item>rgiDp\\</item>
+        <item>rgiDp\\ sili^gom\\</item>
+        <item>piNs\\san\\</item>
+        <item>SriSri toGtoG</item>
+    </string-array>
+
+    <string-array name="makna_ulos_batak">
+        <item>Ulos on jotjot do dilehon halak songon parompa, na marsintasintahon asa martinodohon anak dohot boru dope, nian dakdanak na pinarompaan i asa lam torop iringiringon ni natorasna.</item>
+        <item>Ulos on pangkeon ma laho mangulosi molo adong na marsungsang di partuturan, songon na pinarhulahula hian gabe pinarboru.</item>
+        <item>Ulos on di ulosi tu panganten asa tamba pasupasusian Amanta Debata asa dilehon hagabeon. Boe do muse ni uloshononhon gabe parompa asa anggiat ma di parbisuhi Amanta Debata laho manogu dakdanak dohot angka tinodohonna na naeng ro dope.</item>
+        <item>Ulos on niuloshon do i tu ianakkon si godang ni rohaniba, i ma ianakkon na mambahen las ni roha na balga, na godang di iba.</item>
+        <item>Ulos on di pakke tingki laho mangadati ulaon songon pesta na monding, na mangadati si solhot. Jotjot do ulos on di pakke akka baoa.</item>
+        <item>Ulos on pinangkehon ma laho mangulosi penganten manang gabe parompa na porlu ma dohonon poda taringot tu Dalihan Na Tolu.</item>
+        <item>Ulos on somalna diuloshon halak tu ianakkon na marsitaonon laho mangapuli na ni ulosan i.</item>
+        <item>Ulos on jotjot dibahen halak mangulosi amang ni helana jala digoari mai ulos pansamot na sumintahon asa jolma na boi pangunsandean nian amang ni hela i, na gogo mansamot jala parpomparan sibulangbulangan. Jotjot do uloson diparuloshon laho mangadopi dohot mambahen adat tu na monding.</item>
+        <item>Ulos on marlapatan tu simbol ni ngolu. Ni uloshonon mai tu halak na naeng ta lehon pasupasu asa lam ganjang umur na.</item>
+        <item>Ulos on niuloshonon ma tu ianakkon parpangkat na timbo manang na marhuaso asa boi nian marlinggom di toru ni na ni ulosan i angka na gale dohot angka na pogos, jala tamba jaloonna pasupasu sian Amanta Debata.</item>
+        <item>Sarupa do ulos on lapatanna dohot ulos ragidup.</item>
+        <item>Ulos on marlapatan asa anggiat lobu angka na uli tu jabu ni na mamakesa.</item>
+    </string-array>
+
+    <string-array name="makna_ulos_indonesia">
+        <item>Ulos ini biasanya diberikan orang sebagai gendongan, yang mengharapkan agar mempunyai anak laki-laki dan anak perempuan, bilapun sudah memiliki anak agar semakin baik dibimbing oleh orangtuanya.</item>
+        <item>Ulos ini dipakaikan untuk mengulosi apabila ada yang berantakan dalam partuturan(silsilah), seperti tulang(paman) yang menikahi bere(keponakan) dari silsilah yang jauh.</item>
+        <item>Ulos ini di berikan kepada pengantin agar mendapatkan berkat dari Tuhan agar beranak-cucu. Dapat pula di berikan sebagai gendongan agar diberikan Tuhan kebijaksanaan untuk membimbing anak-anak ataupun anak yang akan lahir kemudian.</item>
+        <item>Ulos ini di berikan kepada anak yang menyenangkan hati, dia lah anak yang menyejukkan hati, yang paling kita sayangi</item>
+        <item>Ulos ini di pakai ketika ingin melakukan adat seperti menghadiri pesta yang peninggal, ataupun perkawinan sanak keluarga. Biasanya ulos ini dipakai para pria.</item>
+        <item>Ulos ini di pakaikan untuk mengulosi pengantin ataupun sebagai gendongan yang perlu diberikan nasehat teringat kepada Dalihan Na Tolu</item>
+        <item>Ulos ini umumnya diuloskan orang ke anak yang sedang mengalami duka.</item>
+        <item>Ulos ini biasanya dibuat orang untuk mengulosi ayah dari mempelai pria dan dinamakan sebagai ulos pemberian hadiah agar menjadi orang yang dapat di percayakan, yang dapat berjuang demi keturunan yang makmur. Biasamua di berikan pada saat membuat adat untuk acara meninggal.</item>
+        <item>Ulos ini mengartikan ke simbol kehidupan. Di uloskanlah itu ke orang yang akan kita beri doa agar dia diberi umur panjang</item>
+        <item>Ulos ini di uloskan kepada anak yang berpangkat tinggi atau yang berkuasa agar dapat melindungi orang yanng lemah dan yang miskin dibawahnya, dan ditambahkanlah kepadanya berkat dari Tuhan.</item>
+        <item>Miripnya ulos ini dengan makna dari ulos ragidup.</item>
+        <item>Ulos ini mengartikan agar masuklah segala yang baik kedalam rumah yang memakainya.</item>
+    </string-array>
+
+    <string-array name="name_makanan_batak">
+        <item>Manuk Napinadar</item>
+        <item>Babi Panggang</item>
+        <item>Dali Ni Horbo</item>
+        <item>Itak Gur Gur</item>
+        <item>Kacang Sihobuk</item>
+        <item>Kue Lampet</item>
+        <item>Naniura</item>
+        <item>Natinombur</item>
+        <item>Pohul-Pohul</item>
+        <item>Saksang</item>
+        <item>Sasagun</item>
+        <item>Tanggo Tanggo</item>
+    </string-array>
+
+    <string-array name="name_makanan_aksara">
+        <item>mNk\\ npindr\\</item>
+        <item>bbi p^g^</item>
+        <item>dli ni hor\\bo</item>
+        <item>itk\\ Gr\\ Gr\\</item>
+        <item>kc^ sihoBk\\</item>
+        <item>Ke lm\\pet\\</item>
+        <item>nniUr</item>
+        <item>ntinom\\Br\\</item>
+        <item>poHl\\ poHl\\</item>
+        <item>sk\\s^</item>
+        <item>ssGn\\</item>
+        <item>t^go t^go</item>
+    </string-array>
+
+    <integer-array name="img_makanan_batak">
+        <item>@drawable/img_makanan_ayam_napinadar</item>
+        <item>@drawable/img_makanan_babi_panggang</item>
+        <item>@drawable/img_makanan_dalinihorbo</item>
+        <item>@drawable/img_makanan_itak_gur_gur</item>
+        <item>@drawable/img_makanan_kacang_sihobuk</item>
+        <item>@drawable/img_makanan_kue_lampet</item>
+        <item>@drawable/img_makanan_naniura</item>
+        <item>@drawable/img_makanan_natinonombur</item>
+        <item>@drawable/img_makanan_pohul_pohul</item>
+        <item>@drawable/img_makanan_saksang</item>
+        <item>@drawable/img_makanan_sasagun</item>
+        <item>@drawable/img_makanan_tanggo_tanggo</item>
+    </integer-array>
+
+    <string-array name="desc_makanan_batak">
+        <item>Ciri khas paling menonjol dari menu masakan ini adalah penggunaan ayam dan andaliman. Ayam yang telah disiapkan dibakar dan dibberi bumbu serta dicampur dengan darah segar dari ayam itu sendiri dengan kematangan yang pas. Manuk atau ayam napinadar lebih enak bila disajikan agak pedas.</item>
+        <item>Daging babi itu diolah sedemikian rupa kemudian disiram dengan sedikit asam untuk kemudian dipanggang. Jika daging babi mulai matang dengan sempurna, maka lemak-lemak dari daging babi akan keluar. Daging babi ini kemudian disajikan bersama dengan bumbu darah (darah babi yang telah dimasak denagn campuran bumbu khas).</item>
+        <item>Susu kerbau yang sudah dimasak kemudian ditambah dengan sedikit garam dan campuran perasan air daun pepaya. Dali ni horbo tampilannya kental seperti tahu putih. Makanan ini lebih nikmat jika dimasak seperti arsik.</item>
+        <item>Bahan utama yang digunakan dalam itak gurgur adalah sama dengan bahan yang dipakai dalam membuat kue lapet. Hanya saja proses pembuatannya sedikit berbeda karena itak gurgur tidak dikukus.</item>
+        <item>Sajian kacang makanan ringan khas Batak berikut dikenal dengan nama kacang Sihobuk karena berasal dari Desa Sihobuk. Proses memasak kacang sihobuk menggunakan kuali besar yang diisi dengan pasir.</item>
+        <item>Kue ini biasanya dibentuk menyerupai limas dan dibungkus daun pisang, proses pembuatannya tidak begitu rumit, dimulai dari tepung beras, kelapa parut yang tidak terlalu tua, dan dicampur.</item>
+        <item>Sajian makanan serupa sushi ini juga berbahan dasar ikan-ikanan. Ikan yang menjadi bahan dasarnya tidak dimasak, melainkan hanya disajikan dengan bumbu bumbu khas saja. Rasanya cenderung asam karena proses pematangannya memakai asam.</item>
+        <item>Ikan yang biasa dipakai untuk diolah menjadi natinombur adalah ikan mujahir, ikan lele, ataupun ikan nila. Natinombur disajikan dengan siraman bumbu di atas ikan yang telah dibakar.</item>
+        <item>Pohul pohul memiliki tampilan mirip dengan lappet biasa dibentuk kepalan tangan. Dengan kata lain pohul pohul ini dicetak dengan cara mengepalkan tangan.</item>
+        <item>Olahan daging babi muda yang masih berumur sekitar 4 sampai 6 bulan sehingga teksturnya menjadi renyah.</item>
+        <item>Terbuat dari tepung beras yang digongseng bersama dengan kelapa dan dicampur dengan gula merah atau gula aren.</item>
+        <item>Olahan berbahan dasar daging babi dan daging anjing yang mirip dengan saksang. Hanya saja daging yang dipakai untuk memasak tanggo tanggo dipotong lebih besar dari biasanya.</item>
+    </string-array>
+
+
+    <string name="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nwliawflawjaliwdlianwlnalwifnlaiwnf"</string>
+</resources>

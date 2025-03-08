@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/namaKuliner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Contoh nawf aef eaf aefaef"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/aksaraKuliner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/aksara_batak_toba"
+            android:gravity="center"
+            android:text="Irisn\\n afo aef aef aef aef aef"
+            android:textColor="@color/colorYellow"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imgKuliner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_makanan_natinonombur" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/descIndoKuliner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:scrollbars="vertical"
+            android:text="Makanan tradisional suku Batak Toba sangatlah unik. Sebuah bumbu yang dinamapak andaliman pun turut menjadi salah satu bumbu utama di tiap masakannya."
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

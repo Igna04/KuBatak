@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailInformasi.detailKebudayaan.bendera.DetailBendera">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Uarna Mandera"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aksara_batak_toba"
+                    android:text="Uar\\n mn\\der"
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Warna Bendera"
+                    android:textColor="@color/colorRed"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Suku Batak memiliki sebuah bendera yang terbagi atas tiga warna. Yaitu berwarna Merah, Putih dan Hitam. Tiap warna memiliki arti yang berbeda."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_bendera_batak" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Pemaknaan Psikologi"
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Warna Merah melambangkan keberanian, kekuatan dan angkara murka. Dalam teori fisika, spektrum warna merah memancar sangat kuat sehingga apapun yang ada disekitarnya ikut berpengaruh."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Warna Putih melambangkan kesucian yang merupakan warna yang netral terhadap warna lain. Dalam teori fisika, spektrum warna putih dipancarkan dan dapat diterima warna lain sehingga menghasilkan kombinasi yang harmonis."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Warna Hitam diartikan sebagai karakter yang teguh, kuat dan bijaksana. Dalam teori fisika, spektrum warna hitam tidak memancar keluar melainkan menyerap energi dari luar sehingga pemakainya merasa hangat."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Pemaknaan Spiritual"
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Dalam budaya adat Batak Toba ketiga warna tersebut adalah representasi dari Debata Natolu (tiga dewa). Ketiga dewa itu, yakni Batara Guru, Sori Sohaliapan dan Bala Bulan. Dalam keyakinan Batak Toba, kepada Debata Natolu inilah masa depan bumi dan kehidupannya diserahkan oleh Mulajadi Nabolon (sosok Pencipta). Pada prinsipnya kolaborasi Debata Natolu adalah Mulajadi Nabolon. Dengan pengertian lain, Debata Natolu merupakan bagian dari masing-masing fungsi Mulajadi Nabolon."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Batara Guru berperan sebagai peletak dasar hukum bagi manusia sehingga fungsinya adalah sebagai hakim agung. Hakim adalah sosok mulia yang memiliki karakter yang bijaksana. Keputusannya harus berlaku adil dan benar. Apabila ia salah menentukan keputusan, maka ia telah mengorbankan kehidupan orang lain. Demikianlah Batara Guru disimbolkan sebagai warna hitam. Ia adalah pengambil keputusan dalam kosmologis Batak Toba."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Sori Sohaliapan dalam spiritual Batak Toba hadir sebagai sosok yang bertugas menegur orang-orang yang bersalah. Tugas terpentingnya adalah mengajak manusia bertobat. Karenanya Sori Sohaliapan disimbolkan dengan warna putih. Warna putih adalah fase yang harus dilalui manusia agar mencapai tingkat kebijaksanaan yang tinggi. Dalam arti harus dengan jalan pertobatanlah, maka manusia akan menjadi sosok yang bijaksana. Sori Sohaliapan layaknya sebuah cermin refleksi bagi manusia. Karena bertugas mengajak dan memberi pertobatan bagi manusia yang berdosa, maka Sori Sohaliapan diyakini dapat menjelma dalam wujud yang tak terduga. Juga berada di tempat-tempat yang tidak terbayangkan."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Bala Bulan bertugas menjaga dan memelihara kehidupan. Itu sebabnya Bala Bulan memiliki kekuatan yang dapat membangun atau menghancurkan kehidupan manusia. Bahkan Bala Bulan juga punya wewenang untuk menghukum manusia. Setelah mendapat hukuman itu, diharapkan manusia diharapkan bertobat. Dalam arti masuk ke dalam level warna putih. Seterusnya untuk kemudian menjadi bijaksana (hitam)."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

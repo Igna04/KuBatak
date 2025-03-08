@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailInformasi.detailKebudayaan.kepercayaan.DetailKepercayaan">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Haporseaon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aksara_batak_toba"
+                    android:text="hpor\\seaon\\"
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Kepercayaan"
+                    android:textColor="@color/colorRed"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Sebelum masuknya pengaruh agama Hindu, Islam, dan Kristen ke tanah Batak, orang Batak pada mulanya belum mengenal nama dan istilah “dewa-dewa”. Kepercayaan orang Batak dahulu (kuno) adalah kepercayaan kepada arwah leluhur serta kepercayaan kepada benda-benda mati. Benda-benda mati dipercayai memiliki tondi (roh) misalnya: gunung, pohon, batu, dll yang kalau dianggap keramat dijadikan tempat yang sakral (tempat sembahan)."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Orang Batak percaya kepada arwah leluhur yang dapat menyebabkan beberapa penyakit atau malapetaka kepada manusia. Penghormatan dan penyembahan dilakukan kepada arwah leluhur akan mendatangkan keselamatan, kesejahteraan bagi orang tersebut maupun pada keturunan. Kuasa-kuasa inilah yang paling ditakuti dalam kehidupan orang Batak di dunia ini dan yang sangat dekat sekali dengan aktifitas manusia."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_raja_naipospos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Sebelum orang Batak mengenal tokoh dewa-dewa orang India dan istilah “Debata”, sombaon yang paling besar orang Batak (kuno) disebut “Ompu Na Bolon” (Kakek/Nenek Yang Maha Besar). Ompu Nabolon (pada awalnya) bukan salah satu dewa atau tuhan tetapi dia adalah yang telah dahulu dilahirkan sebagai nenek moyang orang Batak yang memiliki kemampuan luar biasa dan juga menciptakan adat bagi manusia. Tetapi setelah masuknya kepercayaan dan istilah luar khususnya agama Hindu; Ompu Nabolon ini dijadikan sebagai dewa yang dipuja orang Batak kuno sebagai nenek/kakek yang memiliki kemampuan luar biasa. Untuk menekankan bahwa “Ompu Nabolon” ini sebagai kakek/nenek yang terdahulu dan yang pertama menciptakan adat bagi manusia, Ompu Nabolon menjadi “Mula Jadi Nabolon” atau “Tuan Mula Jadi Nabolon”. Karena kata Tuan, Mula, Jadi berarti yang dihormati, pertama dan yang diciptakan merupakan kata-kata asing yang belum pernah dikenal oleh orang Batak kuno. Selanjutnya untuk menegaskan pendewaan bahwa Ompu Nabolon atau Mula Jadi Nabolon adalah salah satu dewa terbesar orang Batak ditambahkanlah di depan Nabolon atau Mula Jadi Nabolon itu kata ‘Debata’ yang berarti dewa (jamak) sehingga menjadi “Debata Mula Jadi Nabolon”."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Parmalim sebenarnya adalah identitas pribadi, sementara kelembagaannya disebut Ugamo Malim. Pada masyarakat kebanyakan, Parmalim sebagai identitas pribadi itu lebih populer dari 'Ugamo Malim' sebagai identitas lembaganya Berjuang bagi Parmalim bukan hal baru, karena leluhur pendahulunya dari awal dan akhir hidupnya selalu dalam perjuangan. Perjuangan dimulai sejak Raja Sisingamangaraja menyatakan “tolak” kolonialisme Belanda yang dinilai merusak tatanan kehidupan masyarakat adat dan budaya."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="vertical"
+                    android:text="Raja Monang Naipospos adalah Pengurus Pusat Ugamo Malim, sebuah agama kepercayaan yang lahir dari kebudayaan Batak. Agama ini merupakan peninggalan Raja Batak Sisingamangaraja. Kini pusat agama Parmalim terbesar berada di Desa Hutatinggi, 4 kilometer dari kecamatan Laguboti Kabupaten Toba Samosir Sumatera Utara. Orang lebih mengenalnya sebagai Parmalim Hutatinggi. Di desa ini ada rumah ibadah orang Parmalim yang disebut Bale Pasogit."
+                    android:textColor="@color/colorReadBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
