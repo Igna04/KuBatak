@@ -2,7 +2,6 @@ package com.toba.nick2905.kubatak.ui.main
 
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.provider.MediaStore
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -13,6 +12,7 @@ import com.toba.nick2905.kubatak.base.BaseActivityBinding
 import com.toba.nick2905.kubatak.data.local.Mataangin
 import com.toba.nick2905.kubatak.data.local.Numbering
 import com.toba.nick2905.kubatak.databinding.ActivityMainBinding
+import com.toba.nick2905.kubatak.ui.AksaraScanner.AksaraScannerActivity
 import com.toba.nick2905.kubatak.ui.detailInformasi.DetailInformasiActivity
 import com.toba.nick2905.kubatak.ui.kamus.KamusActivity
 
@@ -76,14 +76,17 @@ class MainActivity : BaseActivityBinding<ActivityMainBinding>() {
         }
     }
 
-    private fun openCamera() {
+    private fun openAksaraScanner() {
         try {
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivity(intent)
+            startActivity(Intent(this, AksaraScannerActivity::class.java))
         } catch (e: Exception) {
-            Toast.makeText(this, "Tidak dapat membuka kamera", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Tidak dapat membuka scanner aksara", Toast.LENGTH_SHORT).show()
             e.printStackTrace()
         }
+    }
+
+    private fun openCamera() {
+        openAksaraScanner()
     }
 
     companion object {

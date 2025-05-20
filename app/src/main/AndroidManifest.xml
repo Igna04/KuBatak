@@ -40,9 +40,22 @@
         <activity
             android:name=".ui.detailInformasi.DetailInformasiActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity 
+            android:name=".ui.AksaraScanner.AksaraScannerActivity" 
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".autentikasi.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".autentikasi.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity 
+            android:name=".utils.FirebaseUtils" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <meta-data
             android:name="preloaded_fonts"

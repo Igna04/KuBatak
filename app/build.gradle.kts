@@ -7,7 +7,8 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    namespace = "com.toba.nick2905.kubatak"
+    compileSdk = 34
 
     buildFeatures {
         dataBinding = true
@@ -16,8 +17,8 @@ android {
 
     defaultConfig {
         applicationId = "com.toba.nick2905.kubatak"
-        minSdk = 21
-        targetSdk = 33
+        minSdk = 23
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -32,6 +33,15 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
@@ -62,4 +72,27 @@ dependencies {
 
     //justified text
     implementation("com.codesgood:justifiedtextview:1.1.0")
+
+    // Tensorflow Lite Library
+    implementation ("org.tensorflow:tensorflow-lite:2.11.0")
+    implementation ("org.tensorflow:tensorflow-lite-support:0.4.2")
+    implementation ("org.tensorflow:tensorflow-lite-metadata:0.4.2")
+    // implementation ("org.tensorflow:tensorflow-lite-select-tf-ops:0.4.3")
+
+    // CameraX 
+    val cameraxVersion = "1.2.1"
+
+    implementation("androidx.camera:camera-core:$cameraxVersion")
+    implementation("androidx.camera:camera-camera2:$cameraxVersion")
+    implementation("androidx.camera:camera-lifecycle:$cameraxVersion")
+    implementation("androidx.camera:camera-view:$cameraxVersion")
+
+    // build.gradle (app-level)
+    // implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    // implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation ("com.google.firebase:firebase-auth-ktx:22.3.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
 }

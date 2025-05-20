@@ -4,6 +4,8 @@ import android.content.Intent
 import com.toba.nick2905.kubatak.base.BaseActivityBinding
 import com.toba.nick2905.kubatak.databinding.ActivitySplashscreenBinding
 import com.toba.nick2905.kubatak.ui.main.MainActivity
+import com.toba.nick2905.kubatak.autentikasi.LoginActivity
+import com.toba.nick2905.kubatak.utils.FirebaseUtils
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -18,7 +20,7 @@ class SplashscreenActivity : BaseActivityBinding<ActivitySplashscreenBinding>() 
     override fun setupView() {
         CoroutineScope(Dispatchers.Main).launch {
             delay(SPLASH_DELAY)
-            val intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

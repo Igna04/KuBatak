@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "394261162968",
-    "project_id": "kubatak-project",
-    "storage_bucket": "kubatak-project.firebasestorage.app"
+    "project_number": "319388589150",
+    "project_id": "tugas-akhir-193fa",
+    "storage_bucket": "tugas-akhir-193fa.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:394261162968:android:0d586d35f035a6be1f20ad",
+        "mobilesdk_app_id": "1:319388589150:android:7c2c4cde1f2910e518a8cf",
         "android_client_info": {
           "package_name": "com.toba.nick2905.kubatak"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBvz-fYMblsozUG_4CvnSSXmzAg2RlUd84"
+          "current_key": "AIzaSyBpt3upP7JxuZCRpp28uF3r75zFNFhLBmU"
         }
       ],
       "services": {
