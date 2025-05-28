@@ -74,10 +74,10 @@ dependencies {
     implementation("com.codesgood:justifiedtextview:1.1.0")
 
     // Tensorflow Lite Library
-    implementation ("org.tensorflow:tensorflow-lite:2.11.0")
+    implementation ("org.tensorflow:tensorflow-lite:2.13.0")
     implementation ("org.tensorflow:tensorflow-lite-support:0.4.2")
     implementation ("org.tensorflow:tensorflow-lite-metadata:0.4.2")
-    // implementation ("org.tensorflow:tensorflow-lite-select-tf-ops:0.4.3")
+    implementation ("org.tensorflow:tensorflow-lite-select-tf-ops:2.13.0")
 
     // CameraX 
     val cameraxVersion = "1.2.1"
@@ -94,5 +94,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth-ktx:22.3.1")
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
     implementation("com.google.firebase:firebase-analytics")
+
+    implementation("com.google.code.gson:gson:2.10.1")
 
 }

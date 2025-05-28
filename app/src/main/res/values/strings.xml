@@ -70,20 +70,20 @@
         <item>Surat Batak</item>
         <item>Ina Ni Surat</item>
         <item>Anak Ni Surat</item>
-        <item>Turiturian</item>
+        <!-- <item>Turiturian</item>
         <item>Umpasa</item>
         <item>Umpama</item>
-        <item>Hata Poda</item>
+        <item>Hata Poda</item> -->
     </string-array>
 
     <string-array name="desc_informasi_kesusastraan">
         <item>Asal mula aksara Batak</item>
         <item>Kata pokok aksara Batak Toba</item>
         <item>Kata sambung aksara Batak Toba</item>
-        <item>Cerita Batak Toba</item>
+        <!-- <item>Cerita Batak Toba</item>
         <item>Pantun Batak Toba</item>
         <item>Peribahasa Batak Toba</item>
-        <item>Kata Nasehat Batak Toba</item>
+        <item>Kata Nasehat Batak Toba</item> -->
     </string-array>
 
     <string-array name="name_hari_batak">

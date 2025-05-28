@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat
 import com.toba.nick2905.kubatak.R
 import com.toba.nick2905.kubatak.databinding.ActivityAksaraScannerBinding
 import com.toba.nick2905.kubatak.helper.AksaraRecognitionHelper
+import com.toba.nick2905.kubatak.helper.AksaraTranslator
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -55,28 +56,36 @@ class AksaraScannerActivity : AppCompatActivity() {
     private fun captureImage() {
         val bitmap = binding.viewFinder.bitmap
         if (bitmap != null) {
-            // analyzeImage(bitmap)
+            Log.d(TAG, "captureImage: Bitmap berhasil diambil")
+            analyzeImage(bitmap)
         } else {
+            Log.e(TAG, "captureImage: Bitmap gagal diambil (null)")
             Toast.makeText(this, "Tidak dapat mengambil gambar", Toast.LENGTH_SHORT).show()
         }
     }
+    
 
-    // private fun analyzeImage(bitmap: Bitmap) {
-    //     // Tampilkan preview gambar yang diambil
-    //     binding.imagePreview.setImageBitmap(bitmap)
+    private fun analyzeImage(bitmap: Bitmap) {
+        Log.d(TAG, "analyzeImage: Dipanggil")
 
-    //     // Lakukan pengenalan aksara dan terjemahan aksara
-    //     val result = aksaraRecognitionHelper.recognizeAndTranslate(bitmap)
+        // Tampilkan preview gambar yang diambil
+        binding.imagePreview.setImageBitmap(bitmap)
 
-    //     // Tampilkan hasil
-    //     binding.tvResult.text = "Aksara: ${result.originalAksara}"
-    //     binding.tvConfidence.text = "Tingkat keyakinan: ${(result.confidence * 100).toInt()}%"
+        // Lakukan pengenalan aksara dan terjemahan aksara
+        val (aksara, confidence) = aksaraRecognitionHelper.recognizeCTC(bitmap)
+        Log.d(TAG, "analyzeImage: Hasil deteksi aksara = $aksara")
 
-    //     // Tambahan tampilan untuk hasil terjemahan
-    //     binding.tvBatakWord.text = "Kata Batak : ${result.batakWord}"
-    //     binding.tvIndonesianMeaning.text = "Arti dalam bahasa Indonesai : ${result.indonesianMeaning}"
-    // }
+        val translator = AksaraTranslator(this)
+        val (batakWord, arti) = translator.translateAksara(aksara)
+        Log.d(TAG, "analyzeImage: Hasil terjemahan = $arti")
 
+        // Tampilkan hasil
+        binding.tvResult.text = "Aksara: $aksara"
+        binding.tvConfidence.text = "Tingkat keyakinan: ${(confidence * 100).toInt()}%"
+        binding.tvBatakWord.text = "Kata Batak : $batakWord"
+        binding.tvIndonesianMeaning.text = "Arti dalam bahasa Indonesia : $arti"
+    }
+    
     private fun startCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
 
