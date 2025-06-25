@@ -20,7 +20,7 @@ class SplashscreenActivity : BaseActivityBinding<ActivitySplashscreenBinding>() 
     override fun setupView() {
         CoroutineScope(Dispatchers.Main).launch {
             delay(SPLASH_DELAY)
-            val intent = Intent(applicationContext, LoginActivity::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -9,12 +9,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
-import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.toba.nick2905.kubatak.R
 import com.toba.nick2905.kubatak.databinding.ActivityAksaraScannerBinding
 import com.toba.nick2905.kubatak.helper.AksaraRecognitionHelper
 import com.toba.nick2905.kubatak.helper.AksaraTranslator
@@ -34,21 +32,32 @@ class AksaraScannerActivity : AppCompatActivity() {
         binding = ActivityAksaraScannerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Inisialisasi helper untuk pengenalan aksara
+        // Inisialisasi helper pengenalan aksara
         aksaraRecognitionHelper = AksaraRecognitionHelper(this)
 
-        // Request camera permissions
+        // Request permission kamera
         if (allPermissionsGranted()) {
             startCamera()
         } else {
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
         }
 
-        // Set up the capture button listener
+        // Tombol ambil gambar
         binding.captureButton.setOnClickListener { captureImage() }
 
-        // Back button
+        // Tombol kembali
         binding.btnBack.setOnClickListener { finish() }
+
+        // Tombol ambil ulang
+        binding.btnRetake.setOnClickListener {
+            binding.imagePreview.setImageBitmap(null)
+            binding.imagePreview.visibility = android.view.View.GONE
+            binding.resultContainer.visibility = android.view.View.GONE
+
+            binding.viewFinder.visibility = android.view.View.VISIBLE
+            binding.captureButton.visibility = android.view.View.VISIBLE
+            binding.btnRetake.visibility = android.view.View.GONE
+        }
 
         cameraExecutor = Executors.newSingleThreadExecutor()
     }
@@ -59,86 +68,85 @@ class AksaraScannerActivity : AppCompatActivity() {
             Log.d(TAG, "captureImage: Bitmap berhasil diambil")
             analyzeImage(bitmap)
         } else {
-            Log.e(TAG, "captureImage: Bitmap gagal diambil (null)")
+            Log.e(TAG, "captureImage: Gagal mengambil bitmap")
             Toast.makeText(this, "Tidak dapat mengambil gambar", Toast.LENGTH_SHORT).show()
         }
     }
-    
 
     private fun analyzeImage(bitmap: Bitmap) {
         Log.d(TAG, "analyzeImage: Dipanggil")
 
-        // Tampilkan preview gambar yang diambil
         binding.imagePreview.setImageBitmap(bitmap)
+        binding.imagePreview.visibility = android.view.View.VISIBLE
+        binding.progressBar.visibility = android.view.View.VISIBLE
 
-        // Lakukan pengenalan aksara dan terjemahan aksara
-        val (aksara, confidence) = aksaraRecognitionHelper.recognizeCTC(bitmap)
-        Log.d(TAG, "analyzeImage: Hasil deteksi aksara = $aksara")
+        binding.viewFinder.visibility = android.view.View.GONE
+        binding.captureButton.visibility = android.view.View.GONE
 
-        val translator = AksaraTranslator(this)
-        val (batakWord, arti) = translator.translateAksara(aksara)
-        Log.d(TAG, "analyzeImage: Hasil terjemahan = $arti")
+        binding.cardResult.visibility = android.view.View.GONE
+        binding.resultContainer.visibility = android.view.View.GONE
 
-        // Tampilkan hasil
-        binding.tvResult.text = "Aksara: $aksara"
-        binding.tvConfidence.text = "Tingkat keyakinan: ${(confidence * 100).toInt()}%"
-        binding.tvBatakWord.text = "Kata Batak : $batakWord"
-        binding.tvIndonesianMeaning.text = "Arti dalam bahasa Indonesia : $arti"
+        binding.btnRetake.visibility = android.view.View.VISIBLE
+
+        aksaraRecognitionHelper.recognizeCTC(bitmap) { aksara, confidence ->
+            val translator = AksaraTranslator(this)
+            val (batakWord, arti) = translator.translateAksara(aksara)
+
+            runOnUiThread {
+                Log.d(TAG, "analyzeImage: Hasil aksara = $aksara")
+                Log.d(TAG, "analyzeImage: Hasil arti = $arti")
+
+                binding.tvResult.text = "Aksara: $aksara"
+                binding.tvConfidence.text = "Tingkat keyakinan: ${(confidence * 100).toInt()}%"
+                binding.tvBatakWord.text = "Kata Batak : $batakWord"
+                binding.tvIndonesianMeaning.text = "Arti dalam bahasa Indonesia : $arti"
+
+                binding.progressBar.visibility = android.view.View.GONE
+                binding.cardResult.visibility = android.view.View.VISIBLE
+                binding.resultContainer.visibility = android.view.View.VISIBLE
+            }
+        }
     }
-    
+
     private fun startCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
+        cameraProviderFuture.addListener({
+            val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
 
-        cameraProviderFuture.addListener(
-                {
-                    val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
+            val preview = Preview.Builder()
+                .build()
+                .also {
+                    it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
+                }
 
-                    // Preview
-                    val preview =
-                            Preview.Builder().build().also {
-                                it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
-                            }
+            imageCapture = ImageCapture.Builder()
+                .setCaptureMode(ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY)
+                .build()
 
-                    // Image capture
-                    imageCapture =
-                            ImageCapture.Builder()
-                                    .setCaptureMode(ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY)
-                                    .build()
+            val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
-                    // Select back camera by default
-                    val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
-
-                    try {
-                        // Unbind use cases before rebinding
-                        cameraProvider.unbindAll()
-
-                        // Bind use cases to camera
-                        cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageCapture)
-                    } catch (e: Exception) {
-                        Log.e(TAG, "Use case binding failed", e)
-                    }
-                },
-                ContextCompat.getMainExecutor(this)
-        )
+            try {
+                cameraProvider.unbindAll()
+                cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageCapture)
+            } catch (e: Exception) {
+                Log.e(TAG, "startCamera: Gagal binding kamera", e)
+            }
+        }, ContextCompat.getMainExecutor(this))
     }
 
-    private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
-                ContextCompat.checkSelfPermission(
-                    baseContext, it) == PackageManager.PERMISSION_GRANTED
-    }
+    private fun allPermissionsGranted() =
+        REQUIRED_PERMISSIONS.all {
+            ContextCompat.checkSelfPermission(baseContext, it) ==
+                PackageManager.PERMISSION_GRANTED
+        }
 
-    override fun onRequestPermissionsResult(
-            requestCode: Int,
-            permissions: Array<String>,
-            grantResults: IntArray
-    ) {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQUEST_CODE_PERMISSIONS) {
             if (allPermissionsGranted()) {
                 startCamera()
             } else {
-                Toast.makeText(this, "Izin kamera diperlukan untuk fitur ini", Toast.LENGTH_SHORT)
-                        .show()
+                Toast.makeText(this, "Izin kamera diperlukan", Toast.LENGTH_SHORT).show()
                 finish()
             }
         }

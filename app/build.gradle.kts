@@ -74,10 +74,13 @@ dependencies {
     implementation("com.codesgood:justifiedtextview:1.1.0")
 
     // Tensorflow Lite Library
-    implementation ("org.tensorflow:tensorflow-lite:2.13.0")
-    implementation ("org.tensorflow:tensorflow-lite-support:0.4.2")
-    implementation ("org.tensorflow:tensorflow-lite-metadata:0.4.2")
-    implementation ("org.tensorflow:tensorflow-lite-select-tf-ops:2.13.0")
+    // implementation ("org.tensorflow:tensorflow-lite:2.13.0")
+    // implementation ("org.tensorflow:tensorflow-lite-support:0.4.2")
+    // implementation ("org.tensorflow:tensorflow-lite-metadata:0.4.2")
+    // implementation ("org.tensorflow:tensorflow-lite-select-tf-ops:2.13.0")
+
+    // Flask Library
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // CameraX 
     val cameraxVersion = "1.2.1"

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.toba.nick2905.kubatak">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -9,7 +8,8 @@
         android:logo="@mipmap/ic_launcher_round"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
         <activity android:name=".ui.kamus.KamusActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
@@ -56,10 +56,14 @@
         <activity 
             android:name=".utils.FirebaseUtils" 
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
+        <activity
+            android:name=".services.ApiClient"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
